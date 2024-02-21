@@ -138,7 +138,7 @@ public class JavaApplication11 {
         System.out.println("4. City");
 
         int choice = sc.nextInt();
-        sc.nextLine(); // Consume the newline character
+        sc.nextLine();
 
         String columnName = "";
         String newValue = "";
