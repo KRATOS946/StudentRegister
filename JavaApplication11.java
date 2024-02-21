@@ -43,7 +43,7 @@ public class JavaApplication11 {
             System.out.println("-------------------------");
 
             int operation = sc.nextInt();
-            sc.nextLine(); // Consume the newline character
+            sc.nextLine();
 
             switch (operation) {
                 case 1:
@@ -67,7 +67,7 @@ public class JavaApplication11 {
             String continueChoice = sc.nextLine().trim();
             if (!continueChoice.equalsIgnoreCase("Y")) {
                 System.out.println("Exiting program. Goodbye!");
-                break; // Exit the loop if the user chooses not to continue
+                break;
             }
         }
     }
@@ -166,10 +166,10 @@ public class JavaApplication11 {
                 break;
             default:
                 System.out.println("Invalid option");
-                return; // Exit the method if an invalid option is selected
+                return;
         }
         PreparedStatement ps = con.prepareStatement("update students set "+ columnName +"=? where name=?");
-            // Set the values for the parameters
+    
         ps.setString(1, newValue);
         ps.setString(2, name);
 
